@@ -4,17 +4,51 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-var computerOptions=['rock','paper','scissors','natural twenty']
-$('#shoot').click(function() {
+console.log('dissapoint');
+/*$('#shoot').click(function() {
+    console.log('sad face');
     var human=$('#input').val().toLowerCase();
     var twoRN=Math.random();
+    var outcome=0;
+    var computer='';
     if (twoRN < 0.33) {
-        var computer='0';
-    } else if (twoRN < 0.67) {
-        var computer='1';
+        console.log('chese')
+        computer='rock';
+        if (human=='paper' || human=='natural twenty') {
+            outcome = 0;
+        } else if (human=='scissors') {
+            outcome = 1;
+        } else {
+            outcome = 2;
+    }} else if (twoRN < 0.67) {
+        console.log('meat')
+        computer='paper';
+        if (human=='scissors' || human=='natural twenty') {
+            outcome = 0;
+        } else if (human=='rock') {
+            outcome = 1;
+        } else {
+            outcome = 2;
+    }} else {
+        console.log('candy');
+        computer='scissors';
+        if (human=='rock' || human=='natural twenty') {
+            outcome = 0;
+        } else if (human=='paper') {
+            outcome = 1;
+        } else {
+            outcome = 2;
+    }}
+    console.log('pls');
+    $('#userChoice').text(human);
+    $('#computerChoice').text(computer);
+    if (outcome==0) {
+        $('#result').text('You Win!');
+    } else if (outcome==1) {
+        $('#result').text('You Lose...');
     } else {
-        var computer='2';
+        $('#result').text('No One Wins?');
     }
-});
+});*/
 // DOCUMENT READY FUNCTION BELOW
 
